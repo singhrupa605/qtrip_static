@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QTrip</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -18,19 +18,51 @@
   <!-- 1. Use appropriate css classes on nav element. -->
   <!-- 2. Add child elements as required. -->
 
-   <nav></nav> 
+   <nav  id="navigation-bar" class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container-fluid">
+      <a  class="navbar-brand" href="#">QTrip</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler" >
+        <ul  class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Explore</a>
+          </li>
+        </ul>
+    </div>
+    </div>
+   </nav> 
 
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Use appropriate css classes on the hero image container element. -->
   <!-- 2. Add child elements as required. -->
 
-   <div class="hero-image d-flex"></div> 
+   <div class="hero-image d-flex align-items-center justify-content-center">
+      <h2  id="id-1" class="hero-mainheading">Welcome to Qtrip</h2>
+      <p id="id-2" class="hero-subheading">Explore the world with fantastic places to venture around</p>
+      <input  id="id-3"class="hero-input" type="search" name="" id=""  placeholder="Search a City">   
+   </div> 
 
 
-  <div class="container">
+  <div  class="container-fluid mt-4">
     <!-- TODO: MODULE_LAYOUT -->
     <!-- 1. Create the grid like layout as required. -->
+    <div id="grid" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 ">
+     <div class="col"><a href="./assets/bengaluru.jpg"> Bangalore </a></div>
+     <div class="col"><a href="./assets/kolkata.jpg">Kolkata </a></div>
+     <div class="col">  <a href="./assets/mumbai.jpg"> Mumbai </a></div>
+     <div class="col"> <a href="./assets/goa.jpg">Goa</a></div>
+      <div class="col">  <a href="./assets/singapore.jpg">Singapore</a></div>
+      <div class="col"> <a href="./assets/paris.jpg">Paris</a></div>
+      <div class="col">  <a href="./assets/malaysia.jpg">Malaysia</a></div>
+      <div class="col">  <a href="./assets/dubai.jpg">Dubai</a></div>
+    </div>
+    
   </div>
 
   <footer>
@@ -39,6 +71,11 @@
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- Add scripts needed for bootstrap to work -->
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
   
 </body>
 

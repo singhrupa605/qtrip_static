@@ -15,6 +15,15 @@ textarea:focus,
 input:focus {
   outline: none;
 }
+
+#navigation-bar{
+  background-color: rgb(14, 22, 14);
+  padding:0rem;
+}
+.container-fluid{
+  border-top: 2px solid rgb(235, 232, 232);
+}
+
 a {
   color: inherit !important;
   text-decoration: none !important;
@@ -78,23 +87,42 @@ footer {
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
 }
+#grid{
+  grid-row-gap: 2.5rem;
+  margin-left: 9rem;
+}
+
+
 
 .hero-subheading {
   font-size: 24px;
   font-weight: 100;
+  color: white;
+}
+.hero-mainheading{
+  font-size: 40px;
+  font-weight: 400;
+  color: white;
 }
 .hero-input {
-  width: 80%;
+  width: 65%;
   height: 50px;
   padding: 16px;
-  border-radius: 8px;
-  border: none;
-}
-
+  border-radius: 10px;
+} 
 .nav-link {
   margin-right: 36px;
 }
+
+
 
 /* ================================== */
 /* Adventures grid page CSS */
