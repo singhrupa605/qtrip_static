@@ -1,165 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QTrip</title>
-    <link rel="stylesheet" href="./css/styles.css" />
 
-    <!-- TODO: MODULE_LAYOUT -->
-    <!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QTrip</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 
-  <body>
-    <!-- TODO: MODULE_LAYOUT -->
-    <!-- 1. Use appropriate css classes on nav element. -->
-    <!-- 2. Add child elements as required. -->
+  <!-- TODO: MODULE_LAYOUT -->
+  <!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
 
-    <nav
-      id="navigation-bar"
-      class="navbar navbar-expand-sm navbar-light bg-light"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">QTrip</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggler"
-          aria-controls="navbarToggler"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Explore</a>
-            </li>
-          </ul>
-        </div>
+<body>
+  <!-- TODO: MODULE_LAYOUT -->
+  <!-- 1. Use appropriate css classes on nav element. -->
+  <!-- 2. Add child elements as required. -->
+
+  <nav id="navigation-bar" class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">QTrip</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/adventures/index.html">Explore</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-
-    <!-- TODO: MODULE_LAYOUT -->
-    <!-- 1. Use appropriate css classes on the hero image container element. -->
-    <!-- 2. Add child elements as required. -->
-
-    <div class="hero-image d-flex align-items-center justify-content-center">
-      <h2 id="id-1" class="hero-mainheading">Welcome to Qtrip</h2>
-      <p id="id-2" class="hero-subheading">
-        Explore the world with fantastic places to venture around
-      </p>
-      <input
-        id="id-3"
-        class="hero-input"
-        type="search"
-        name=""
-        id=""
-        placeholder="Search a City"
-      />
     </div>
+  </nav>
 
-      <div class="container">
-      <!-- TODO: MODULE_LAYOUT -->
-      <!-- 1. Create the grid like layout as required. -->
-        <div id="grid" class="row">
-        <div class="col col-12 col-sm-6 col-lg-3 ">
+  <!-- TODO: MODULE_LAYOUT -->
+  <!-- 1. Use appropriate css classes on the hero image container element. -->
+  <!-- 2. Add child elements as required. -->
+
+  <div class="hero-image d-flex align-items-center justify-content-center">
+    <h2 id="id-1" class="hero-mainheading">Welcome to Qtrip</h2>
+    <p id="id-2" class="hero-subheading">
+      Explore the world with fantastic places to venture around
+    </p>
+    <input id="id-3" class="hero-input" type="search" name="" id="" placeholder="Search a City" />
+  </div>
+
+  <div class="container">
+    <!-- TODO: MODULE_LAYOUT -->
+    <!-- 1. Create the grid like layout as required. -->
+    <div id="grid" class="row">
+      <div class="col col-12 col-sm-6 col-lg-3 ">
+        <a href="./pages/adventures/index.html">
           <div class="tile d-flex ">
             <div class="tile-text">
               <h4>BENGALURU<h4>
-              <p>100+ PlACES</p>
+                  <h6>100+ PlACE</h6>
             </div>
-            <img src="./assets/bengaluru.jpg"  alt="Error Loading Image">
+            <img src="./assets/bengaluru.jpg" alt="Error Loading Image">
           </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-lg-3"> 
+        </a>
+      </div>
+      <div class="col col-12 col-sm-6 col-lg-3">
+        <a href="./pages/adventures/index.html">
           <div class="tile d-flex">
             <div class="tile-text">
               <h4>MUMBAI<h4>
-              <p>200+ PlACES</p>
+                  <h6>200+ PlACE </h6>
             </div>
             <img src="./assets/mumbai.jpg" alt="Error Loading Image">
           </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-lg-3">
+        </a>
+      </div>
+      <div class="col col-12 col-sm-6 col-lg-3">
+        <a href="./pages/adventures/index.html">
           <div class="tile d-flex">
             <div class="tile-text">
               <h4>KOLKATA<h4>
-              <p>64+ PlACES</p>
+                  <h6>64+ PlACE</h6>
             </div>
             <img src="./assets/kolkata.jpg" alt="Error Loading Image">
           </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-lg-3">
+        </a>
+      </div>
+      <div class="col col-12 col-sm-6 col-lg-3">
+        <a href="./pages/adventures/index.html">
           <div class="tile d-flex">
             <div class="tile-text">
               <h4>GOA<h4>
-              <p>400+ PlACES</p>
+                  <h6>400+ PlACES</h6>
             </div>
             <img src="./assets/goa.jpg" alt="Error Loading Image">
           </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-lg-3">
+        </a>
+      </div>
+      <div class="col col-12 col-sm-6 col-lg-3">
+        <a href="./pages/adventures/index.html">
           <div class="tile d-flex">
             <div class="tile-text">
               <h4>SINGAPORE<h4>
-              <p>500+ PlACES</p>
+                  <h6>500+ PlACES</h6>
             </div>
             <img src="./assets/singapore.jpg" alt="Error Loading Image">
           </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-lg-3 ">
+        </a>
+      </div>
+      <div class="col col-12 col-sm-6 col-lg-3 ">
+        <a href="./pages/adventures/index.html">
           <div class="tile d-flex">
-
             <div class="tile-text">
               <h4>PARIS<h4>
-              <p>480+ PlACES</p>
+                  <h6>480+ PlACES</h6>
             </div>
             <img src="./assets/paris.jpg" alt="Error Loading Image">
           </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-lg-3">
+        </a>
+      </div>
+      <div class="col col-12 col-sm-6 col-lg-3">
+        <a href="./pages/adventures/index.html">
           <div class="tile d-flex">
             <div class="tile-text">
               <h4>MALAYSIA<h4>
-              <p>650+ PlACES</p>
+                  <h6>650+ PlACES</h6>
             </div>
             <img src="./assets/malaysia.jpg" alt="Error Loading Image">
           </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-lg-3">
+        </a>
+      </div>
+      <div class="col col-12 col-sm-6 col-lg-3">
+        <a href="./pages/adventures/index.html">
           <div class="tile d-flex">
             <div class="tile-text">
               <h4>DUBAI<h4>
-              <p>700+ PlACES</p>
+                  <h6>700+ PlACES</h6>
             </div>
             <img src="./assets/dubai.jpg" alt="Error Loading Image">
           </div>
-        </div>
+        </a>
       </div>
     </div>
+  </div>
 
-    <footer>
-      <div class="container">© QTrip 2020</div>
-    </footer>
+  <footer>
+    <div class="container">© QTrip 2020</div>
+  </footer>
 
-    <!-- TODO: MODULE_LAYOUT -->
-    <!-- Add scripts needed for bootstrap to work -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- TODO: MODULE_LAYOUT -->
+  <!-- Add scripts needed for bootstrap to work -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
