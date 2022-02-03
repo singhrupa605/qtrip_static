@@ -20,9 +20,9 @@ input:focus {
   background-color: rgb(14, 22, 14);
   padding: 0rem;
 }
-.container-fluid {
+#navbar {
   border-top: 2px solid rgb(235, 232, 232);
-  height: 5rem;
+  height: 3.5rem;
 }
 
 a {
@@ -144,6 +144,7 @@ footer {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
   height: 100%;
+  width: 100%;
 }
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
@@ -170,7 +171,6 @@ footer {
   font-size: 18px;
   font-weight: 400;
 }
-
 /* ================================== */
 /* Adventure details page CSS */
 /* ================================== */
@@ -178,19 +178,56 @@ footer {
 .adventure-detail-card {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  height: 100%;
 }
 
-.adventure-card-image {
+.adventure-detail-card img {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
 }
-.adventure-card-image:hover {
+.adventure-detail-card img:hover {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  cursor: pointer;
+  filter: brightness(82%);
+  transform: scale(1.08);
 }
 .experience-content ul li {
   margin-left: 16px;
-  padding: 0;
+}
+.experience-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#sold {
+  height: 8rem;
+  border: 1px solid rgb(241 233 233);
+}
+@media only screen and (min-width: 1200px) {
+  #sold {
+    position: fixed;
+    left: 66%;
+  }
+}
+
+#box2 img {
+  height: 50%;
+}
+
+#left-col {
+  border: 1px solid rgb(241 233 233);
+}
+
+#main-grid {
+  grid-column-gap: 0.5rem;
+}
+.img-fluid {
+  padding-top: 0.7rem;
 }
 
 @media only screen and (min-width: 768px) {
